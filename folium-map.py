@@ -51,7 +51,7 @@ for i in range(0,len(data)):
 
 title_html = '''
              <h1 align="left" style="color:red"><b>The Great Irish Lighthouses</b></h1>
-             <h4><a target="_blank" rel="noopener noreferrer" href="https://github.com/vinejain/random-forest-classifier-framework">(view code)</a></h4>
+             <h4><a target="_blank" rel="noopener noreferrer" href="https://github.com/vinejain/great-irish-lighthouses">(view code)</a></h4>
              <body style="background-color:black;">
              '''
 m.get_root().html.add_child(folium.Element(title_html))
