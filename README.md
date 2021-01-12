@@ -19,5 +19,5 @@ sh src/run.sh
 
 ## Data Source
 
-https://www.greatlighthouses.com/
-https://www.irishlights.ie/tourism/our-lighthouses/lighthouse-list.aspx
+- https://www.greatlighthouses.com/
+- https://www.irishlights.ie/tourism/our-lighthouses/lighthouse-list.aspx
