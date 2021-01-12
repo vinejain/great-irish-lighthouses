@@ -8,7 +8,7 @@ git clone https://github.com/vinejain/great-irish-lighthouses.git
 2) Execute the shell script 'run.sh'
 
 ```
-sh src/run.sh
+sh run.sh
 ```
 
 ## Screens
