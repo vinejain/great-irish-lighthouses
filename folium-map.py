@@ -7,7 +7,8 @@ import pandas as pd
 
 # initialing folium base map for Ireland
 # Make an empty map
-m = folium.Map(location=[53.350496, -6.239456], zoom_start=7, tiles='stamentoner', max_bounds=True, scrollWheelZoom = False)
+#m = folium.Map(location=[53.350496, -6.239456], zoom_start=7, tiles='Stamen Toner', max_bounds=True, scrollWheelZoom = False)
+m = folium.Map(location=[53.350496, -6.239456], zoom_start=7, tiles='OpenStreetMap', max_bounds=True, scrollWheelZoom = False)
 
 # reading dataset
 data = pd.read_csv('data.csv')
@@ -45,7 +46,7 @@ for i in range(0,len(data)):
   html = get_frame(data.iloc[i]['url'], width, height)
   iframe = IFrame(html=html , width=width, height=height)
   popup  = folium.Popup(iframe, parse_html = True)
-  folium.Marker([data.iloc[i]['lon'], data.iloc[i]['lat']],  icon=folium.Icon(color='brown', icon='anchor', prefix='fa'), 
+  folium.Marker([data.iloc[i]['lon'], data.iloc[i]['lat']],  icon=folium.Icon(color='black', icon='anchor', prefix='fa'), 
                 popup=popup).add_to(m)
 
 
